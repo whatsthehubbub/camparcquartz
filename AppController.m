@@ -40,7 +40,7 @@ static libvlc_media_player_t *player[3] = {nil, nil, nil};
 	}
     [qcView setEventForwardingMask :NSAnyEventMask];
     [qcView setMaxRenderingFrameRate: 30.0];
-    [qcView startRendering];
+    [qcView setAutostartsRendering: YES];
     
     /* Load the VLC engine */
 	vlcInstance = libvlc_new (0, NULL);
