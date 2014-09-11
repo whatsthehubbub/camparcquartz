@@ -49,7 +49,16 @@ static libvlc_media_player_t *player[3] = {nil, nil, nil};
 - (void)windowWillClose:(NSNotification *)notification 
 {
     [qcView unloadComposition];
-    [qcView dealloc];
+    
+    for(int index=0; index<3; index++) {
+        if(player[index]) {
+            libvlc_media_player_release(player[index]);
+            player[index] = nil;
+        }
+        lastImage[index] = nil;
+        pixels[index] = nil;
+        pool[index] = nil;
+    }
     
 	[NSApp terminate:self];
 }
@@ -163,8 +172,10 @@ static void unlock(int index, void *data, void *id, void * const *p_pixels)
     if (pool[index] == nil)
 		pool[index] = [[NSAutoreleasePool alloc] init];
 	
-    if (lastImage[index] != nil)
+    if (lastImage[index] != nil) {
 		[lastImage[index] release];
+        lastImage[index] = nil;
+    }
     
 	AppController *self = (AppController *)data;
 	
