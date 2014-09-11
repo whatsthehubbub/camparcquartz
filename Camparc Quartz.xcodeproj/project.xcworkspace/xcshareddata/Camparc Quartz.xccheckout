@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>A2465AE5-3FDF-4A39-AEE5-DAFD62211911</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Camparc Quartz</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>BEC92756-3299-4956-9DD2-7DEBAE672103</key>
+		<string>https://github.com/whatsthehubbub/camparcquartz.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Camparc Quartz.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>BEC92756-3299-4956-9DD2-7DEBAE672103</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/whatsthehubbub/camparcquartz.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>BEC92756-3299-4956-9DD2-7DEBAE672103</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>BEC92756-3299-4956-9DD2-7DEBAE672103</string>
+			<key>IDESourceControlWCCName</key>
+			<string>camparcquartz</string>
+		</dict>
+	</array>
+</dict>
+</plist>
