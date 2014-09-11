@@ -17,6 +17,7 @@ static NSAutoreleasePool *pool[3] = {nil, nil, nil};
 
 static libvlc_media_player_t *player[3] = {nil, nil, nil};
 
+//static QCView *qcView;
 
 @implementation AppController
 
@@ -27,11 +28,19 @@ static libvlc_media_player_t *player[3] = {nil, nil, nil};
 
 - (void) awakeFromNib
 {
+    //NSView *superview = [window contentView];
+    //NSRect frame = NSMakeRect(10, 10, 400, 400);
+    //qcView = [[QCView alloc] initWithFrame:frame];
+    //[superview addSubview:qcView];
+    [qcView unloadComposition];
+    
     /* Setup QC composition */
 	if(![qcView loadCompositionFromFile:[[NSBundle mainBundle] pathForResource:@"composition" ofType:@"qtz"]]) {
 		NSLog(@"Could not load composition");
 	}
     [qcView setEventForwardingMask :NSAnyEventMask];
+    [qcView setMaxRenderingFrameRate: 30.0];
+    [qcView startRendering];
     
     /* Load the VLC engine */
 	vlcInstance = libvlc_new (0, NULL);
