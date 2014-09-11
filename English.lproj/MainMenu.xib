@@ -3645,7 +3645,7 @@ Y3JpcHRpb26GkoSXmCBDb250cm9scyBleGVjdXRpb24gb2YgdGhlIHBhdGNoLoaGA</bytes>
 							<object class="NSTextFieldCell" key="NSCell" id="127102491">
 								<int key="NSCellFlags">-1804599231</int>
 								<int key="NSCellFlags2">268436480</int>
-								<string key="NSContents">/Users/Aldo/Desktop/square.mp4</string>
+								<string key="NSContents">rtsp://cyan.local:8554/video.mp4</string>
 								<object class="NSFont" key="NSSupport" id="61917244">
 									<string key="NSName">LucidaGrande</string>
 									<double key="NSSize">13</double>
@@ -3686,7 +3686,7 @@ Y3JpcHRpb26GkoSXmCBDb250cm9scyBleGVjdXRpb24gb2YgdGhlIHBhdGNoLoaGA</bytes>
 							<object class="NSTextFieldCell" key="NSCell" id="333231747">
 								<int key="NSCellFlags">-1804599231</int>
 								<int key="NSCellFlags2">268436480</int>
-								<string key="NSContents">/Users/Aldo/Desktop/square.mp4</string>
+								<string key="NSContents">rtsp://magenta.local:8554/video.mp4</string>
 								<reference key="NSSupport" ref="61917244"/>
 								<string key="NSCellIdentifier">_NS:9</string>
 								<reference key="NSControlView" ref="703038098"/>
@@ -3707,7 +3707,7 @@ Y3JpcHRpb26GkoSXmCBDb250cm9scyBleGVjdXRpb24gb2YgdGhlIHBhdGNoLoaGA</bytes>
 							<object class="NSTextFieldCell" key="NSCell" id="242262908">
 								<int key="NSCellFlags">-1804599231</int>
 								<int key="NSCellFlags2">268436480</int>
-								<string key="NSContents">/Users/Aldo/Desktop/square.mp4</string>
+								<string key="NSContents">rtsp://yellow.local:8554/video.mp4</string>
 								<reference key="NSSupport" ref="61917244"/>
 								<string key="NSCellIdentifier">_NS:9</string>
 								<reference key="NSControlView" ref="964316132"/>
