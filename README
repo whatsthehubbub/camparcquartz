@@ -1,0 +1,6 @@
+This program uses libVLC to play back a video and run the frames through Quartz
+Composer.
+
+This is not a VLC plugin.
+
+This is a bad hack and does not try to shutdown cleanly.
