@@ -160,7 +160,7 @@ static void *lock(int index, void *data, void **p_pixels)
 
 static void unlock(int index, void *data, void *id, void * const *p_pixels)
 {
-	if (pool[index] == nil)
+    if (pool[index] == nil)
 		pool[index] = [[NSAutoreleasePool alloc] init];
 	
     if (lastImage[index] != nil)
@@ -183,10 +183,11 @@ static void unlock(int index, void *data, void *id, void * const *p_pixels)
 	[image addRepresentation:irep];
 	[irep release];
 	
+    if([[self qcView] loadedComposition]) {
+        [[self qcView] setValue:image forInputKey:[NSString stringWithFormat:@"Image_%d", index]];
+    }
     
-    [[self qcView] setValue:image forInputKey:[NSString stringWithFormat:@"Image_%d", index]];
     lastImage[index] = image;
-     
 }
 
 static void display(void *data, void *id)
